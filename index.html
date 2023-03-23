@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Noto+Naskh+Arabic|Lateef|Oswald|Martian+Mono|Itim" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<script src="header.js" type="text/javascript" defer></script>
+
+<title>Biostatistics</title>
+</head>
+
+<header-component></header-component>
+<body>
+<br>
+<div class="div2">
+<h3 class="a">Comparisons</h3>
+<table>
+	<tr>
+		<th></th>
+		<th>Measures of Central Tendency/Value</th>
+		<th>Measures of Dispersion/Spread</th>
+	</tr>
+	<tr>
+		<th style="border-bottom:3px solid #4cb9fc"></th>
+		<td style="border-bottom:3px solid #4cb9fc"><ul><li>mean</li><li>median</li><li>mode</li></ul></td>
+		<td style="border-bottom:3px solid #4cb9fc"><ul><li>range</li><li>Standard Deviation</li><li>IQR</li></ul></td>
+	</tr>
+	<tr>
+		<th></th>
+		<th>Normally Distributed Data/No Extreme Value</th>
+		<th>Not Normally Distributed Data/Extreme Value Present</th>
+	</tr>
+	<tr>
+		<th>Measure of Central Tendency</th>
+		<td>Mean</td>
+		<td>Median</td>
+	</tr>
+	<tr>
+		<th>Measure of Dispersion</th>
+		<td>Standard Deviation</td>
+		<td>IQR</td>
+	</tr>
+</table>
+</div>
+
+<br><br>
+<div class="div2">
+<table>
+	<tr>
+		<th></th>
+		<th>Parametric Test (Normally Distributed Data)</th>
+		<th colspan="2">Non Parametric Test (Not Normally Distributed Data)</th>
+	</tr>
+	<tr>
+		<th rowspan="2" style="border-bottom:3px solid #4cb9fc">Compare Mean of Sample, with Mean of Standard Value/Population</th>
+		<td>One Sample t-Test</td>
+		<th rowspan="2" style="border-bottom:3px solid #4cb9fc">Association Between Two Categorical Data</th>
+		<td>Chi-square Test</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:3px solid #4cb9fc">Example:<br>Hb value of sample, compared with Hb value of standard population according to CPG</td>
+		<td style="border-bottom:3px solid #4cb9fc">Example:<br>Gender & Hypertension</td>
+	</tr>
+	<tr>
+		<th rowspan="2" style="border-bottom:3px solid #4cb9fc">Compare Mean of Two Unrelated Groups</th>
+		<td>Independent Sample t-Test</td>
+		<td colspan="2"><ul><li>Wilcoxon Signed Rank Test</li><li>Mann Whitney U Test</li></ul></td>
+	</tr>
+	<tr>
+		<td style="border-bottom:3px solid #4cb9fc">Example:<br>Hb value Male, compared with Hb value of Female</td>
+		<td colspan="2", style="border-bottom:3px solid #4cb9fc">Example:<br>Mean knowledge score between educated & uneducated</td>
+	</tr>
+	<tr>
+		<th rowspan="2" style="border-bottom:3px solid #4cb9fc">Compare Mean of Same Sample</th>
+		<td>Paired Sample t-Test</td>
+		<td colspan="2"><ul><li>Wilcoxon Signed Rank Test</li><li>Mann Whitney U Test</li></ul></td>
+	</tr>
+	<tr>
+		<td style="border-bottom:3px solid #4cb9fc">Example:<br>Mean hypertension before & after treatment</td>
+		<td colspan="2", style="border-bottom:3px solid #4cb9fc">Example:<br>Mean FBS before & after treatment</td>
+	</tr>
+	<tr>
+		<th rowspan="2" style="border-bottom:3px solid #4cb9fc">Compare Mean of >2 Unrelated Groups</th>
+		<td>ANOVA Test</td>
+		<td colspan="2">Kruskal Wallis Test</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:3px solid #4cb9fc">Example:<br>Mean FBS in different ethnics</td>
+		<td colspan="2", style="border-bottom:3px solid #4cb9fc">Example:<br>Mean SBP of different occupation groups</td>
+	</tr>
+</table>
+</div>
+
+<br><hr>
+<div class="div3">
+<h3 class="a">Correlation</h3>
+<p class="a2">- Linear relationship between 2 continuous variables</p>
+<p class="a2">- Eg: BMI & SBP.</p>
+<p class="a2">- One of the assumptions is there is no outlier (>3 Std. Deviation).</p>
+<p class="a2">- Strong positive correlation = more than 0.5</p>
+<p class="a2">- Strong negative correlation = less than -0.5</p>
+<p class="a2">- Eg. -0.307 = weak negative correlation.</p>
+<p class="a2">- Remember:</p>
+<ul class="aa">
+<li>0 = No correlation.</li>
+<li>+1 = Perfect positive correlation.</li>
+<li>-1 = Perfect negative correlation.</li>
+</ul>
+<p class="a2">- Additional notes:</p>
+<ul class="aa">
+<li>two-tailed test = Is the calculated value either below or above expectation?</li>
+<li>one-tailed test = Is the calculated value below/above expectation?</li>
+</ul>
+<p class="a2">- Eg. of one-tailed: We test a new drug, is it better than old drug?</p>
+
+<br><br><hr>
+<h3 class="a">Linear Regression</h3>
+<p class="a2"><u>Simple Linear Regression</u></p>
+<p class="a2">- Predict dependent variable, from independent variable. [P-D-F-I]</p>
+<p class="a2">- Involve only one dependent & independent variable.</p>
+<p class="a2">- Eg: Predict SBP (dependent), from BMI (independent).</p>
+<p class="a2">- 6 assumptions:</p>
+<ol class="aa">
+<li>Continuous independent variable.</li>
+<li>Continuous dependent variable.</li>
+<li>Has linear relationship (do correlation test first).</li>
+<li>No autocorrelation. (bias due to non-random sampling).</li>
+<li>Homoscedasticity (all dots uniformly distributed around central line).</li>
+<li>No outliers (very high/very low value). </li>
+</ol>
+</div>
+
+<br><br><br>
+<a href="#" onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>
